@@ -7,7 +7,7 @@ import {
 } from '@expo-google-fonts/roboto';
 import theme from '@theme/index';
 
-import { NewGroup } from '@screens/NewGroup';
+import { Players } from '@screens/Players';
 import { Loading } from '@components/Loading';
 
 export default function App() {
@@ -20,7 +20,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <NewGroup /> : <Loading />}
+      {fontsLoaded ? <Players /> : <Loading />}
     </ThemeProvider>
   );
 }
